@@ -6,17 +6,17 @@
 
 # FEATURES
 
-*Add notes*: Easily add notes via an input field.
+**Add notes**: Easily add notes via an input field.
 
-*Remove notes*: Easily remove notes via a clear X.
+**Remove notes**: Easily remove notes via a clear X.
 
-*Edit notes*: Easily edit notes to change their contents via the pencil icon.
+**Edit notes**: Easily edit notes to change their contents via the pencil icon.
 
-*Empty note check*: Checks if you gave no input and tells you it's an empty note.
+**Empty note check**: Checks if you gave no input and tells you it's an empty note.
 
-*Modern style and clean css*
+**Modern style and clean css**
 
-*Responsive design*
+**Responsive design**
 
 ---
 
