@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #1e1e2e;
+  --fg-color: #e0e0e0;
+  --card-color: #2a2a3a;
+  --accent-color: #7aa2f7;
+  --accent-hover: #89b4fa;
+  --danger-color: #f7768e;
+  --danger-hover: #ff98a4;
+  --edit-color: #7dcfff;
+  --edit-hover: #9bdefe;
+  --border-color: #3a3a4a;
+  --font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+	text-align: center;
+	font-family: "Comic Sans MD", Arial;
+	background-color: var(--bg-color);
+	color: var(--fg-color);
+	margin: 2rem;
+}
+
+h1 {
+	color: var(--accent-color);
+}
+
+.task {
+	background: var(--card-color);
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+	padding: 0.8rem 1rem;
+	margin: 0.5rem auto;
+	max-width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0 2px 5px #0003;
+}
+
+.task-label {
+	flex-grow: 1;
+	text-align: left;
+	font-size: 1rem;
+}
+
+.add-task-button {
+	background: var(--accent-color);
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.1s;
+	margin-bottom: 1.5rem;
+}
+.add-task-button:hover {
+	background: var(--accent-hover);
+	transform: translateY(-2px);
+}
+
+.delete-button {
+	background: var(--danger-color);
+	border: none;
+	cursor: pointer;
+	font-size: 1.3rem;
+	margin-left: 0.4rem;
+	transition: transform 0.2s;
+}
+.delete-button:hover {
+	background: var(--danger-hover);
+	transform: translateY(-2px);
+}
+
+.edit-button {
+	background: var(--edit-color);
+	border: none;
+	cursor: pointer;
+	font-size: 1.3rem;
+	margin-left: 0.4rem;
+	transition: transform 0.2s;
+}
+.edit-button:hover {
+	background: var(--edit-hover);
+	transform: translateY(-2px);
+}
