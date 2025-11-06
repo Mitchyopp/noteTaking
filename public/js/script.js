@@ -5,6 +5,15 @@ document.body.appendChild(addTask);
 
 const input = document.getElementById("taskInput");
 
+function snapshotAndSave() {
+  const tasks = [...document.querySelectorAll(".task-label")].map(el => el.textContent);
+  fetch("/save", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ tasks }),
+  }).catch(err => console.error("Save failed:", err));
+}
+
 function render(text) {
   const task = document.createElement("div");
   task.className = "task";
