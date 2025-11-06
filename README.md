@@ -1,5 +1,8 @@
 # Note taking application
 
+> [!IMPORTANT]
+> The link below does NOT save data because it cannot write the json file. Data is only stored if run LOCALLY.
+
 [https://notetaking-psdi.onrender.com/]
 
 ---
