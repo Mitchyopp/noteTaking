@@ -43,6 +43,14 @@ h1 {
 	font-size: 1rem;
 }
 
+#taskInput {
+  border-radius: 8px;
+  background: var(--accent-color);
+  color: black;
+  border: none;
+  padding: 0.6rem 1.2rem;
+}
+
 .add-task-button {
 	background: var(--accent-color);
 	color: white;
