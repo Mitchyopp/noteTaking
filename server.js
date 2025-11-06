@@ -9,6 +9,12 @@ const json_file = path.join(__dirname, "data.json");
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
+function ensureDataFile() {
+  if (!fs.existsSync(json_file)) {
+    fs.writeFileSync(json_file, JSON.stringify({ tasks: [] }, null, 2));
+  }
+}
+
 app.get("/load", (req, res) => {
   ensureDataFile();
   const raw = fs.readFileSync(json_file, "utf8");
